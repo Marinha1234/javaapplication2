@@ -1,0 +1,20 @@
+package javaapplication3;
+
+import java.util.Scanner;
+public class JavaApplication3 {
+
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int[] altura = new int[10];
+        int soma = 0;    
+        for(int i=0;i<altura.length;i++){
+        System.out.println(" me diga a altura em cm");
+        altura[i] = scan.nextInt();
+        soma += altura[i];
+        }
+        soma = soma/altura.length;
+        System.out.println(soma + "cm");
+    }
+   
+}
